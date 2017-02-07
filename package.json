@@ -1,0 +1,26 @@
+{
+  "name": "bluebank",
+  "version": "1.0.0",
+  "description": "Blue Bank é um projeto para testar seus conhecimentos de backend e frontend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilherme-maegava/bluebank.git"
+  },
+  "author": "Guilherme Maegava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilherme-maegava/bluebank/issues"
+  },
+  "homepage": "https://github.com/guilherme-maegava/bluebank#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "config": "^1.25.1",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.1"
+  }
+}

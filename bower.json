@@ -1,0 +1,21 @@
+{
+  "name": "bluebank",
+  "description": "Blue Bank é um projeto para testar seus conhecimentos de backend e frontend.",
+  "main": "server.js",
+  "authors": [
+    "Guilherme Maegava"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/guilherme-maegava/bluebank",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "bootstrap": "^3.3.7"
+  }
+}
