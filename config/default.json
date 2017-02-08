@@ -3,7 +3,6 @@
 		"port": "3000"
 	},
 	"database" : {
-		"host": "locahost",
-		"port": "27017" 
+		"name": "data.db"
 	}
 }

@@ -1,0 +1,12 @@
+{"_id":"001","cpf":"00000001","bankBranch":"111","number":"0001","value":"3213.00"}
+{"_id":"002","cpf":"00000002","bankBranch":"111","number":"0002","value":"432.00"}
+{"_id":"003","cpf":"00000003","bankBranch":"111","number":"0003","value":"321.00"}
+{"_id":"004","cpf":"00000004","bankBranch":"222","number":"0001","value":"3333.00"}
+{"_id":"005","cpf":"00000005","bankBranch":"222","number":"0002","value":"42332.00"}
+{"_id":"006","cpf":"00000006","bankBranch":"222","number":"0003","value":"123.00"}
+{"_id":"007","cpf":"00000007","bankBranch":"222","number":"0004","value":"32.00"}
+{"_id":"008","cpf":"00000008","bankBranch":"222","number":"0005","value":"500.00"}
+{"_id":"009","cpf":"00000009","bankBranch":"333","number":"0001","value":"4343.00"}
+{"_id":"010","cpf":"10000001","bankBranch":"333","number":"0002","value":"322.00"}
+{"_id":"011","cpf":"10200001","bankBranch":"333","number":"0003","value":"1321.00"}
+{"_id":"012","cpf":"10021001","bankBranch":"333","number":"0004","value":"32121.00"}

@@ -21,6 +21,6 @@
     "body-parser": "^1.16.0",
     "config": "^1.25.1",
     "express": "^4.14.1",
-    "mongoose": "^4.8.1"
+    "nedb": "^1.8.0"
   }
 }

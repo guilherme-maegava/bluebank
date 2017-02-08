@@ -1,8 +1,9 @@
 var bodyParser = require('body-parser');
 var config = require('config');
-var database = require('mongoose');
 var express = require('express');
 var routes = require('./app/routes');
+
+var database = require('./app/database');
 
 var app = express();
 
@@ -17,6 +18,6 @@ routes(app);
 	res.redirect('/index.html');
 });*/
 
-app.listen(3000, function(){
+app.listen(config.get("server.port"), function(){
 	console.log("BlueBank's Server listen on port: " + this.address().port);
 });

@@ -2,20 +2,22 @@
 <html lang="pt-br" ng-app="bluebank">
 <head>
     <meta charset="UTF-8">
-    <base href='/'>
+    <base href="/">    
     <meta name="viewport" content="width=device-width">
 
     <title>Blue Bank</title>
 
-    <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap-theme.min.css">
 
 	<script src="/angular/angular.min.js"></script>
+    <script src="/angular-route/angular-route.min.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/controllers/transfer-controller.js"></script>
 </head>
 <body>
 	<div class="container">
-	  <ng-view></ng-view>
+        <ng-view></ng-view>
 	</div>
 </body>
 </html>

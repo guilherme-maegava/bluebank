@@ -4,11 +4,11 @@ angular.module('bluebank', ['ngRoute'])
 	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/transfer', {
-		templateUrl: 'views/main.html',
+		templateUrl: 'partials/main.html',
 		controller: 'TransferController'
 	});
 
 	$routeProvider.otherwise({
-		redirectTo: '/transfer'
+		redirectTo: "/transfer"
 	});
 });
