@@ -19,5 +19,5 @@ routes(app);
 });*/
 
 app.listen(config.get("server.port"), function(){
-	console.log("BlueBank's Server listen on port: " + this.address().port);
+	console.log("[Server] BlueBank's Server listen on port: " + this.address().port);
 });

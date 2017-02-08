@@ -7,7 +7,7 @@ if(!db) {
         filename: dbName, 
         autoload: true 
     });
-    console.log('Database ' + dbName + ' is already to use');
+    console.log('[Database] Connected on ' + dbName);
 }
 
 module.exports = db;

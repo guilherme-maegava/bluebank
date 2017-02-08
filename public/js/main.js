@@ -4,7 +4,7 @@ angular.module('bluebank', ['ngRoute'])
 	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/transfer', {
-		templateUrl: 'partials/main.html',
+		templateUrl: 'views/main.html',
 		controller: 'TransferController'
 	});
 
