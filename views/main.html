@@ -1,77 +1,71 @@
-<div class="jumbotron">
-	<h1 class="text-primary">>> Blue Bank</h1>
-</div>
-
 <p ng-show="errorFriendlyMessage.length" class="alert alert-danger">{{errorFriendlyMessage}}</p>
 <p ng-show="successFriendlyMessage.length" class="alert alert-success">{{successFriendlyMessage}}</p>
 
-
-<div class="container">
-    <h2>Transferência entre Contas Correntes</h2>
-    <div class="container col-sm-6" style="border:3px solid #cecece;">
-	    <form name="transferForm" ng-submit="transfer()">
-			<h3> Conta de Origem </h3>
-			<div class="form-group">
-				<div class="row">
-					<div class="col-sm-2 align-self-center">
-		    			<label class="text-right" for="sourceBankBranch">Agência:</label>
-		    		</div>
-		    		<div class="col-sm-1">
-		    			<input ng-model="srcAcc.bankBranch" type="number" class="form-control-center" id="sourceBankBranch" required>
-		    		</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="row">
-					<div class="col-sm-2 align-self-center">
-		    			<label class="text-right" for="sourceAccount">Conta:</label>
-		    		</div>
-		    		<div class="col-sm-1">
-		    			<input ng-model="srcAcc.number" type="number" class="form-control-center" id="sourceAccount" required>
-		    		</div>
-				</div>
-			</div>
-			<h3> Conta de Destino </h3>
-			<div class="form-group">
-				<div class="row">
-					<div class="col-sm-2 align-self-center">
-		    			<label class="text-right" for="sourceBankBranch">Agência:</label>
-		    		</div>
-		    		<div class="col-sm-1">
-		    			<input ng-model="destAcc.bankBranch" type="number" class="form-control-center" id="sourceBankBranch" required>
-		    		</div>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="row">
-					<div class="col-sm-2 align-self-center">
-		    			<label class="text-right" for="sourceAccount">Conta:</label>
-		    		</div>
-		    		<div class="col-sm-1">
-		    			<input ng-model="destAcc.number" type="number" class="form-control-center" id="sourceAccount" required>
-		    		</div>
-				</div>
-			</div>
-			<br>
+<div class="container col-md-12" style="border:3px solid #cecece;">
+    <form name="transferForm" ng-submit="transfer()">
+		<h3> Conta de Origem </h3>
+		<div class="form-group">
 			<div class="row">
-				<div class="form-group col-sm-7">
-					<div class="row">
-						<div class="col-sm-3 align-self-center">
-			    			<label class="text-right" for="value">Valor:</label>
-			    		</div>
-			    		<div class="col-sm-1">
-			    			<input ng-model="value" type="number" class="form-control-center" id="value" required>
-			    		</div>
-					</div>
-				</div>
-				<div class="col-sm-2">
-					<button type="submit" class="btn btn-success">Transferir</button>
-				</div>
-				<div class="col-sm-2">
-					<a href="/" class="btn btn-default">Limpar</a>
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="sourceBankBranch">Agência:</label>
 	    		</div>
-	    	</div>
-	    	<br>
-	    </form>
-    </div>
-</dir>
+	    		<div class="col-sm-1">
+	    			<input ng-model="srcAcc.bankBranch" type="number" class="form-control-center" id="sourceBankBranch" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="sourceAccount">Conta:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="srcAcc.number" type="number" class="form-control-center" id="sourceAccount" required>
+	    		</div>
+			</div>
+		</div>
+		<h3> Conta de Destino </h3>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="sourceBankBranch">Agência:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="destAcc.bankBranch" type="number" class="form-control-center" id="sourceBankBranch" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="sourceAccount">Conta:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="destAcc.number" type="number" class="form-control-center" id="sourceAccount" required>
+	    		</div>
+			</div>
+		</div>
+		<br>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="value">Valor:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="value" type="number" class="form-control-center" id="value" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6"></div>
+			<div class="col-sm-3">
+				<button type="submit" class="btn btn-primary btn-block">Transferir</button>
+			</div>
+			<div class="col-sm-3">
+				<a href="/" class="btn btn-primary btn-block">Limpar</a>
+    		</div>
+    	</div>
+    	<br>
+    </form>
+</div>
+

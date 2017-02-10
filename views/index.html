@@ -14,10 +14,22 @@
     <script src="/angular-route/angular-route.min.js"></script>
 	<script src="js/main.js"></script>
     <script src="js/controllers/transfer-controller.js"></script>
+    <script src="js/controllers/accounts-controller.js"></script>
+    <script src="js/controllers/account-controller.js"></script>
 </head>
 <body>
-	<div class="container">
-        <ng-view></ng-view>
-	</div>
+    <div class="jumbotron">
+        <h1 class="text-primary text-center"> Blue Bank</h1>
+    </div>
+    <dir class="row">
+        <dir class="col-md-3 text-center">
+            <p><a href="/transfer" class="btn btn-primary btn-lg btn-block">Transferência entre Contas</a></p>
+            <p><a href="/new" class="btn btn-primary btn-lg btn-block">Criar Conta</a></p>
+            <p><a href="/accounts" class="btn btn-primary btn-lg btn-block">Lista de Contas Correntes</a></p>
+        </dir>
+        <dir class="col-md-7">
+            <ng-view></ng-view>
+        </dir>
+    </dir>
 </body>
 </html>

@@ -8,6 +8,16 @@ angular.module('bluebank', ['ngRoute'])
 		controller: 'TransferController'
 	});
 
+	$routeProvider.when('/accounts', {
+		templateUrl: 'views/accounts.html',
+		controller: 'AccountsController'
+	});
+
+	$routeProvider.when('/new', {
+		templateUrl: 'views/createAccount.html',
+		controller: 'AccountController'
+	});
+
 	$routeProvider.otherwise({
 		redirectTo: "/transfer"
 	});

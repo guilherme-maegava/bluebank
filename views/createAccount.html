@@ -1,0 +1,59 @@
+<p ng-show="errorFriendlyMessage.length" class="alert alert-danger">{{errorFriendlyMessage}}</p>
+<p ng-show="successFriendlyMessage.length" class="alert alert-success">{{successFriendlyMessage}}</p>
+
+<div class="container col-md-12" style="border:3px solid #cecece;">
+    <form name="transferForm" ng-submit="create()">
+		<div class="form-group">
+			<br>
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="bankBranch">Agência:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="newAccount.bankBranch" type="number" class="form-control-center" id="bankBranch" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="number">Conta:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="newAccount.number" type="number" class="form-control-center" id="number" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="cpf">CPF:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="newAccount.cpf" type="number" class="form-control-center" id="cpf" required>
+	    		</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-2 align-self-center">
+	    			<label class="text-right" for="balance">Deposito:</label>
+	    		</div>
+	    		<div class="col-sm-1">
+	    			<input ng-model="newAccount.balance" type="number" class="form-control-center" id="balance" required>
+	    		</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<dir class="col-sm-6"></dir>
+			<div class="col-sm-3">
+				<button type="submit" class="btn btn-primary btn-block">Criar</button>
+			</div>
+			<div class="col-sm-3">
+				<button type="button" ng-click="clear()" class="btn btn-primary btn-block">Limpar</a>
+    		</div>
+    	</div>
+    	<br>
+    </form>
+</div>

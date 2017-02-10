@@ -1,5 +1,5 @@
-{"_id":"001","cpf":"00000001","bankBranch":"111","number":"1001","balance":"2213"}
-{"_id":"002","cpf":"00000002","bankBranch":"111","number":"1022","balance":"4321"}
+{"_id":"001","cpf":"00000001","bankBranch":"111","number":"1001","balance":"3213"}
+{"_id":"002","cpf":"00000002","bankBranch":"111","number":"1022","balance":"3321"}
 {"_id":"003","cpf":"00000003","bankBranch":"111","number":"1333","balance":"321.00"}
 {"_id":"004","cpf":"00000004","bankBranch":"222","number":"2081","balance":"3333.00"}
 {"_id":"005","cpf":"00000005","bankBranch":"222","number":"2802","balance":"42332.00"}
@@ -10,3 +10,6 @@
 {"_id":"010","cpf":"10000001","bankBranch":"333","number":"1402","balance":"322.00"}
 {"_id":"011","cpf":"10200001","bankBranch":"333","number":"1303","balance":"1321.00"}
 {"_id":"012","cpf":"10021001","bankBranch":"333","number":"1014","balance":"32121.00"}
+{"bankBranch":"122","number":"222","cpf":"88590542","balance":"5000","_id":"M2B5KyLUvzQPupah"}
+{"bankBranch":"122","number":"222","cpf":"88590542","balance":"2000","_id":"M2B5KyLUvzQPupah"}
+{"_id":"001","cpf":"00000001","bankBranch":"111","number":"1001","balance":"6213"}

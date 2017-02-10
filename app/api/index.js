@@ -10,13 +10,29 @@ api.find = function(req, res){
 
 };
 
+api.list = function(req, res){
+	db.find({}, function(err, doc) {
+	    if (err) return console.log(err);
+	    res.json(doc);
+	});
+
+};
+
+api.create = function(req, res){
+	db.insert(req.body, function(err, newDoc) {
+	    if (err) return console.log(err);
+	    res.send(newDoc._id);
+	});
+
+};
+
 api.transfer = function(req, res){
 	var newValue;
 	db.findOne({_id: req.query.source }, function(err, doc) {
 	    if (err) return console.log(err);
 	    
 	    newValue = "";
-	    newValue = (parseInt(doc.balance)-req.query.value).toString();
+	    newValue = (parseFloat(doc.balance)-req.query.value).toString();
 	    db.update({_id: req.query.source}, { $set: { balance: newValue}}, {},
 		function(err,numReplaced){
 			 if (err) return console.log(err);
@@ -25,7 +41,7 @@ api.transfer = function(req, res){
 			    if (err) return console.log(err);
 			    
 			    newValue = "";
-			    newValue = (parseInt(doc.balance)+parseInt(req.query.value)).toString();
+			    newValue = (parseFloat(doc.balance)+parseFloat(req.query.value)).toString();
 			    db.update({_id: req.query.destination}, { $set: { balance: newValue}}, {},
 				function(err,numReplaced){
 					 if (err) return console.log(err);

@@ -1,0 +1,19 @@
+<table class="table table-striped table-bordered table-responsive"> 
+	<thead> 
+		<tr> 
+			<th>Agência</th> 
+			<th>Conta</th> 
+			<th>CPF</th> 
+			<th>Saldo</th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<tr ng-repeat="account in accounts"> 
+			<th scope="row">{{account.bankBranch}}</th> 
+			<td>{{account.number}}</td> 
+			<td>{{account.cpf}}</td> 
+			<td>{{account.balance | currency}}</td> 
+			</tr> 
+		<tr>
+	</tbody> 
+</table>
